@@ -12,16 +12,22 @@ const roundedSquareWave = (t, delta, a, f) => {
 
 export default function Home() {
   return (
-    <>
-    <Canvas style={{ height: '100vh', width: "100vw" }} orthographic camera={{ zoom: 20 }}>
-      <color attach="background" args={['black']} />
+    <div className={styles.hero}>
+    <Canvas style={{width: '100vw', height: '100vh'}} orthographic camera={{ zoom: 20 }}>
+      <color attach="background" args={['white']} />
      
       <Dots />
     </Canvas>
+    
+      <h3 className={styles.heroText}>
+            Hi, I'm<br /><strong className={styles.strong}>Andrew Boles.<br /></strong>I'm a
+            full stack web developer. Let's get creative.
+          </h3>
+    
     <div style={{height: '100vh', width: '100vw', backgroundColor: '#8c1a3d'}}>
 
     </div>
-    </>
+    </div>
   )
 }
 
