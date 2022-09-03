@@ -1,6 +1,8 @@
+import styles from '../styles/Navbar.module.css'
+
 const Navbar = () => {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul>
         <li>
           <a href="#about">Skills</a>
