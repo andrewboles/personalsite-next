@@ -160,7 +160,7 @@
   z-index: 1;
 }
 
-.projectVideo video:hover {
+.projects video:hover {
   transform: scale(0.95);
 }
 .projectDescription{

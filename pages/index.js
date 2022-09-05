@@ -12,11 +12,6 @@ export default function Home() {
   const aboutRef = useRef(null);
   return (
     <>
-      <Head></Head>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-      />
       <div className={styles.hero}>
         <Canvas
           style={{ width: "100vw", height: "100vh" }}
@@ -151,7 +146,7 @@ export default function Home() {
           <h2>Projects</h2>
           <div className={styles.projectGallery}>
             <div className={styles.projectVideo}>
-              <div className={styles.videoBackground}/>
+              <div className={styles.videoBackground} />
               <a href="https://flickflock.xyz">
                 <video
                   className={styles.videoPreview}
@@ -176,7 +171,7 @@ export default function Home() {
                   <i className="devicon-react-original"></i>
                   <i className="devicon-express-original"></i>
                   <i className="devicon-mongodb-plain"></i>
-                  <Icon icon="logos:prisma"/>
+                  <Icon icon="logos:prisma" />
                 </div>
                 <div className={styles.projectButtons}>
                   <a href="https://flickflock.xyz">
@@ -188,7 +183,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className={styles.projectVideoReverse} >
+            <div className={styles.projectVideoReverse}>
               <div className={styles.videoBackground}></div>
               <a href="https://cityseeker.vercel.app">
                 <video
@@ -212,14 +207,14 @@ export default function Home() {
                 <div className={styles.techUsed}>
                   <i className="devicon-nextjs-original"></i>
                   <i className="devicon-react-original"></i>
-                  <Icon icon="bxl:tailwind-css"/>
+                  <Icon icon="bxl:tailwind-css" />
                 </div>
                 <div className={styles.projectButtons}>
                   <a href="https://cityseeker.vercel.app">
                     <button>Demo</button>
                   </a>
                   <a href="https://github.com/andrewboles/cityseeker">
-                    <Icon icon="ant-design:github-filled"/>
+                    <Icon icon="ant-design:github-filled" />
                   </a>
                 </div>
               </div>
@@ -246,18 +241,21 @@ export default function Home() {
                   Remix.js. Features OAuth2 Microsoft login & Mapbox integration
                 </h4>
                 <div className={styles.techUsed}>
-                  <Icon icon="simple-icons:remix"/>
+                  <Icon icon="simple-icons:remix" />
                   <i className="devicon-react-original"></i>
                   <i className="devicon-nodejs-plain"></i>
                   <i className="devicon-css3-plain-wordmark"></i>
-                  <span className="iconify" data-icon="simple-icons:mapbox"></span>
+                  <span
+                    className="iconify"
+                    data-icon="simple-icons:mapbox"
+                  ></span>
                 </div>
                 <div className={styles.projectButtons}>
                   <a href="https://fueleconomyremixdemo.fly.dev/">
                     <button>Demo</button>
                   </a>
                   <a href="https://github.com/andrewboles/fueleconomy-remix">
-                  <Icon icon="ant-design:github-filled"/>
+                    <Icon icon="ant-design:github-filled" />
                   </a>
                 </div>
               </div>
