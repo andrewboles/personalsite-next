@@ -33,14 +33,15 @@ export default function Home() {
         </h3>
         <StyledButton
           text={"See My Work"}
-          style={{ position: "absolute", zIndex: 1, top: "75vh" }}
+          style={{ position: "absolute", zIndex: 1, bottom: "10vh" }}
           onClick={() => aboutRef.current.scrollIntoView()}
         />
+        </div>
         <Navbar />
         <AboutSection {...{ aboutRef }} />
         <ProjectsSection />
         <ContactSection />
-      </div>
+      
     </>
   );
 }
