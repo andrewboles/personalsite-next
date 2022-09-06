@@ -1,20 +1,15 @@
 import styles from "../styles/ContactSection.module.css";
-import { useState, useEffect} from 'react'
 import StyledButton from "./StyledButton";
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactSection = () => {
- const [formSubmitted, setFormSubmitted] = useState(false)
-
- const handleSubmit = e => {
-    e.preventDefault()
-    setFormSubmitted(true)
-    console.log(e.target[0].value)
-    console.log(e.target[1].value)
- }
+ 
+ const [state, handleSubmit] = useForm("mjvzgrlq");
+ 
  
   return (
     <footer id="contact" className={styles.contact}>
-    {formSubmitted === false ? <>
+    {state.succeeded === false ? <>
       <p>
         I&apos;m always up to talk professional and collaborative opportunities,
         music, gaming, sci-fi books, or whatever&apos;s on your mind. You can
@@ -38,10 +33,20 @@ const ContactSection = () => {
       </p>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">name</label>
-        <input id="name" type="text" />
+        <input id="contactname" type="text" name="contactname" />
+        <ValidationError 
+        prefix="contactname" 
+        field="contactname"
+        errors={state.errors}
+      />
         <label htmlFor="message">message</label>
-        <textarea id="message" type="text"></textarea>
-        <StyledButton text="submit" type="submit"/>
+        <textarea id="message" type="text" name="message"></textarea>
+        <ValidationError 
+        prefix="message" 
+        field="message"
+        errors={state.errors}
+      />
+        <StyledButton text="submit" type="submit" disabled={state.submitting}/>
       </form>
       </> : <h6>thanks for reaching out!</h6>}
       <h6>

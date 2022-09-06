@@ -1,11 +1,11 @@
 import styles from '../styles/StyledButton.module.css'
 
-const StyledButton = ({onClick, text, style, type="button"}) => {
+const StyledButton = ({ text, type="button", ...props}) => {
 
   console.log(styles.styledButton)
 
   return (
-    <button type={type} onClick={onClick} className={styles.styledButton} style={style}>
+    <button type={type} className={styles.styledButton}  {...props}>
       {text}
     </button>
   )
