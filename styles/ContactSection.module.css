@@ -16,7 +16,7 @@
     font-weight: 500;
   }
   .contact a:link {
-    text-decoration: none;
+    text-decoration: none; 
   }
   .contact svg {
     width: clamp(1.6rem, 2.6vw, 1.9rem);
