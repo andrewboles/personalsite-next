@@ -18,7 +18,7 @@
   .contact a:link {
     text-decoration: none; 
   }
-  .contact svg {
+  .contact svg { 
     width: clamp(1.6rem, 2.6vw, 1.9rem);
     height: clamp(1.6rem, 2.6vw, 1.9rem); /* border: 1px solid black; */
   }
