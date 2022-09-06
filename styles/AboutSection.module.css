@@ -1,0 +1,92 @@
+
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2ebe6;
+    padding: 10px 0px;
+  }
+  
+  .about a {
+    color: #cf9535;
+  }
+  
+  .about aside {
+    color: #363945;
+    margin: 35px 20px;
+    padding: 10px;
+    flex: 1.4;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+    line-height: 1.5;
+  }
+  
+  .about h2 {
+    color: #89908c;
+    font-family: "Manrope", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px 0px;
+  }
+  .skillsSection {
+    margin: 35px 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1.25;
+  }
+  .skillsSection i {
+    color: #a95144;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin: 5px;
+  }
+  .skillsSection svg {
+    fill: #a95144;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin: 5px;
+  }
+  .skillsSection h6 {
+    color: #89908c;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    margin: 4px 0px;
+  }
+  
+  .skillsSection h5 {
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    margin: 5px 0px;
+    color: #363945;
+  }
+  .skillSet {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .skills-room{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .skillsCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 4px;
+  }
+  
+
+
+@media (max-width: 500px) {
+    
+    .about {
+      flex-direction: column;
+    }
+  
+    .about h2 {
+      margin-top: 0px;
+    }
+  }
