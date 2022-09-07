@@ -77,9 +77,9 @@ const ContactSection = () => {
       </AnimatePresence>
 
       <h6>
-        big thanks to <a href="https://feathericons.com/">feathericons.com,</a>
-        <a href="https://devicon.dev/">devicon.dev,</a>
-        <a href="https://icon-sets.iconify.design/">iconify,</a>
+        big thanks to <a href="https://feathericons.com/">feathericons.com, </a>
+        <a href="https://devicon.dev/">devicon.dev, </a>
+        <a href="https://icon-sets.iconify.design/">iconify, </a>
         <a href="https://threejs.org/">threejs.org,</a> and threejs&apos;s
         ingenious contributors
       </h6>
