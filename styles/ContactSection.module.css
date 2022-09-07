@@ -117,3 +117,9 @@
   .contact a{
     z-index: 1;
   }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

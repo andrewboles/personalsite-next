@@ -1,10 +1,13 @@
 import styles from "../styles/AboutSection.module.css";
 import { Icon } from "@iconify/react";
+import RevealAnimatedDiv from "./RevealAnimatedDiv";
 
 const AboutSection = ({ aboutRef }) => {
+  
+
   return (
     <section id="about" ref={aboutRef} className={styles.about}>
-      <aside>
+      <RevealAnimatedDiv className={styles.aside}>
         <h2>Who I am</h2>
         I&apos;m a self-taught, full stack developer who sees a blank webpage as
         an empty canvas. What I bring are positivity, curiosity, a collaborative
@@ -17,8 +20,8 @@ const AboutSection = ({ aboutRef }) => {
         programming has been a welcome symptom of my desire to express myself
         creatively, and a self-ultimatum to bring that capacity into my
         professional life.
-      </aside>
-      <div className={styles.skillsSection}>
+      </RevealAnimatedDiv>
+      <RevealAnimatedDiv className={styles.skillsSection}>
         <h2>Skills</h2>
         <h5>frontend</h5>
         <div className={styles.skillSet}>
@@ -105,7 +108,7 @@ const AboutSection = ({ aboutRef }) => {
             <h6>bitbucket</h6>
           </div>
         </div>
-      </div>
+     </RevealAnimatedDiv>
     </section>
   );
 };

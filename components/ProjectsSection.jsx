@@ -1,12 +1,13 @@
 import styles from "../styles/ProjectsSection.module.css";
 import { Icon } from "@iconify/react";
-
+import RevealAnimatedDiv from "./RevealAnimatedDiv";
 const ProjectsSection = () => {
+
   return (
     <section id="projects" className={styles.projects}>
       <h2>Projects</h2>
       <div className={styles.projectGallery}>
-        <div className={styles.projectVideo}>
+        <RevealAnimatedDiv className={styles.projectVideo}>
           <div className={styles.videoBackground} />
           <a href="https://flickflock.xyz">
             <video
@@ -43,8 +44,8 @@ const ProjectsSection = () => {
               </a>
             </div>
           </div>
-        </div>
-        <div className={styles.projectVideoReverse}>
+        </RevealAnimatedDiv>
+        <RevealAnimatedDiv className={styles.projectVideoReverse} >
           <div className={styles.videoBackground}></div>
           <a href="https://cityseeker.vercel.app">
             <video
@@ -79,8 +80,8 @@ const ProjectsSection = () => {
               </a>
             </div>
           </div>
-        </div>
-        <div className={styles.projectVideo}>
+          </RevealAnimatedDiv>
+          <RevealAnimatedDiv className={styles.projectVideo}>
           <div className={styles.videoBackground}></div>
           <a href="https://fueleconomyremixdemo.fly.dev/">
             <video
@@ -117,7 +118,7 @@ const ProjectsSection = () => {
               </a>
             </div>
           </div>
-        </div>
+          </RevealAnimatedDiv>
       </div>
     </section>
   );
